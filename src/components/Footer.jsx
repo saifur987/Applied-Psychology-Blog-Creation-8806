@@ -39,11 +39,11 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center text-gray-600">
                 <SafeIcon icon={FiMail} className="mr-3 text-gray-400" />
-                <span>dr.saifur@example.com</span>
+                <span>support@drsaifurrahman.com</span>
               </div>
               <div className="flex items-center text-gray-600">
                 <SafeIcon icon={FiPhone} className="mr-3 text-gray-400" />
-                <span>+44 20 7123 4567</span>
+                <span>+44 785 33 666 71</span>
               </div>
               <div className="flex items-start text-gray-600">
                 <SafeIcon icon={FiMapPin} className="mr-3 text-gray-400 mt-1" />
