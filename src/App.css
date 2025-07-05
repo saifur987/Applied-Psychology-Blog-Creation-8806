@@ -1,0 +1,72 @@
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus styles */
+*:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Prose styling */
+.prose {
+  max-width: none;
+}
+
+.prose p {
+  @apply text-gray-600 leading-relaxed mb-4;
+}
+
+.prose h2 {
+  @apply text-2xl font-medium text-gray-900 mt-8 mb-4;
+}
+
+.prose h3 {
+  @apply text-xl font-medium text-gray-900 mt-6 mb-3;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-blue-200 pl-6 italic text-gray-700 my-6;
+}
+
+.prose ul {
+  @apply list-disc list-inside text-gray-600 mb-4 space-y-2;
+}
+
+/* Simple, clean animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.slide-up {
+  animation: slideUp 0.3s ease-out;
+}
